@@ -1,0 +1,10 @@
+{
+ "compilerOptions": {
+   "baseUrl": ".",
+   "paths": {
+     "#mylib/*": ["D:/Igor/Dev/myLib/*"],
+     "#models/*": ["./src/models/*"],
+     "#middlewares/*": ["./src/middlewares/*"]
+   }
+ }
+}

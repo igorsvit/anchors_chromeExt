@@ -1,0 +1,177 @@
+#anchors-page-element {
+  display: block;
+  box-sizing: border-box;
+  position: fixed;
+  top:70px;
+  right:0px;
+  z-index: 100;
+  max-width:40%;
+  height:auto;
+  min-height: 100px;
+  max-height: 100vh;
+  background-color: #6b6763;
+  overflow-y: auto;
+}
+.col-resizing{
+  cursor:col-resize;
+}
+.resizer-grip{
+  background-color: blue;
+}
+#left-resizer-grip{
+  cursor:col-resize;
+  width:1px;
+  height: 100%;
+  position:absolute;
+  left:0px;
+}
+#right-resizer-grip{
+  cursor:col-resize;
+  width:1px;
+  height: 100%;
+  position:absolute;
+  right:0px;
+}
+#top-resizer-grip{
+  cursor: row-resize;
+  width:100%;
+  height: 1px;
+  position:absolute;
+  top:0px;
+  z-index: 100;
+}
+#bottom-resizer-grip{
+  cursor: row-resize;
+  width:100%;
+  height: 1px;
+  position:absolute;
+  bottom:0px;
+}
+#anchors-page-element-header {
+  display:flex;
+  align-self: center;
+  justify-content:center;
+  line-height: normal;
+  height: 16px;
+  background-color: #6b6763;
+  color: white;
+  font-size:small;
+  position: relative;
+}
+#anchors-minimize-button{
+  position:absolute;
+  left:0px;
+  box-sizing: border-box;
+  border-left: 1px solid blue;;
+  width:12px;
+  height: 16px;
+  background-color: red;
+  font-size:xx-small;
+  color: white;
+  opacity: 0.5;
+}
+#anchors-maximize-button{
+  position:fixed;
+  right:0px;
+  top:0px;
+  box-sizing: border-box;
+  border: 1px solid blue;
+  width:12px;
+  height: 16px;
+  background-color: red;
+  opacity: 0.5;
+  z-index: 100;
+}
+#del-anchors-button{
+  position:absolute;
+  left:13px;
+  color:black;
+  background-color: red;
+    align-self: center;
+  font-size:small;
+  box-sizing: border-box;
+  width:12px;
+  height: 16px;
+}
+#anchors-save-button{
+  position:absolute;
+  right:0px;
+  box-sizing: border-box;
+  border-left: 1px solid blue;;
+  width:12px;
+  height: 16px;
+  background-color: blue;
+  opacity: 0.5;
+}
+
+#anchors-page-element:hover {
+  cursor: default;
+}
+.anchors-page-elemen-col-resize{
+  cursor: col-resize;
+
+}
+.anchors-container {
+  display: flex;
+  flex-direction: column;
+  max-width:100%;
+  background-color: #6b6763;
+  overflow:hidden;
+ }
+.anchor-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 40px 12fr 10px;
+  border: 1px solid blue;
+  border-top: none;
+  box-sizing: border-box;
+  color: black;
+  background-color: rgb(245, 245, 66);
+}
+.row-resizer-grip{
+  position: absolute;
+  bottom:0px;
+  cursor: row-resize;
+  width:100%;
+  height: 1px;
+}
+.anchor-row:hover{
+  background-color: rgb(21, 237, 86);
+  border: 1px solid green;
+  border-top: none;
+  transition: background-color 0.5s ease;
+}
+.anchor-name{
+  font-size:small;
+  line-height: normal;
+  padding-left: 2px;
+}
+/*.anchor-name:hover{
+  background-color: rgb(21, 237, 86);
+  border: 1px solid green;
+  border-top: none;
+  transition: background-color 0.5s ease;
+}*/
+/*.anchor-locator{
+  flex-basis: 50px;
+  flex-shrink: 1; 
+border: 1px solid green;
+  overflow:hidden;
+}*/
+.anchor-text{
+  border-left:solid blue 1px;
+  border-right:solid blue 1px;
+  font-size:small;
+  line-height: normal;
+  padding-left: 2px;
+}
+
+#anchor-delete-button{
+  background-color: red;
+  align-self: center;
+  font-size:small;
+}
+
+.no-display{
+  display: none;
+}
